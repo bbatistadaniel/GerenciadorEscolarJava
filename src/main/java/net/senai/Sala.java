@@ -2,14 +2,14 @@ package net.senai;
 
 public class Sala {
 
-    private int numero;
+    private int nome;
     private String materia;
     private String periodo;
     private String professor;
 
     public Sala(int numero, String materia, String periodo, String professor){
 
-        this.numero = numero;
+        this.nome = numero;
         this.materia = materia;
         this.periodo = periodo;
         this.professor = professor;
@@ -22,11 +22,11 @@ public class Sala {
 
     @Override
     public String toString(){
-        return String.format("Número: %s\nMatéria: %s\nPeríodo: %s\nProfessor: %s\n", String.valueOf(this.numero), this.materia, this.periodo, this.professor);
+        return String.format("Nome: %s\nMatéria: %s\nPeríodo: %s\nProfessor: %s\n", this.nome, this.materia, this.periodo, this.professor);
     }
 
-    public int getNumero() {
-        return numero;
+    public int getNome() {
+        return nome;
     }
 
     public String getMateria() {
