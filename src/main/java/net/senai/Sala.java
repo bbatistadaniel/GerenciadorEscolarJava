@@ -20,4 +20,9 @@ public class Sala {
 
     }
 
+    @Override
+    public String toString(){
+        return String.format("Nome: %s\nMatéria: %s\nPeríodo: %s\nProfessor: %s\n");
+    }
+
 }
