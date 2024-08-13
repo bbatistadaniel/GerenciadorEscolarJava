@@ -1,19 +1,18 @@
 package net.senai;
 
-public class Sala {
+public class Sala implements GetterAndSetter{
 
-    private int nome;
+    private String nome;
     private String materia;
     private String periodo;
     private String professor;
 
-    public Sala(int numero, String materia, String periodo, String professor){
 
-        this.nome = numero;
+    public Sala(String nome, String materia, String periodo, String professor){
+        this.nome = nome;
         this.materia = materia;
         this.periodo = periodo;
         this.professor = professor;
-
     }
 
     public void listarAlunos(){
@@ -25,8 +24,15 @@ public class Sala {
         return String.format("Nome: %s\nMatéria: %s\nPeríodo: %s\nProfessor: %s\n", this.nome, this.materia, this.periodo, this.professor);
     }
 
-    public int getNome() {
-        return nome;
+
+    @Override
+    public String getNome() {
+        return this.nome;
+    }
+
+    @Override
+    public void setNome(String nome){
+        this.nome = nome;
     }
 
     public String getMateria() {
