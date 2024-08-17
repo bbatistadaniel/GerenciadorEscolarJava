@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String lastInput;
-
+        Sala salaSelecionada = null;
 
 
         while (true){
@@ -45,7 +45,6 @@ public class Main {
                 if (Arrays.asList(new String[]{"select", "selecionar"}).contains(lastInput.toLowerCase())){
                     System.out.printf("Digite o nome da sala: ");
                     String salaDesejada = scanner.nextLine();
-                    Sala salaSelecionada;
                     for (int i = 0; i < salas.size(); i++){
                         if (salas.get(i).getNome().toLowerCase().equals(salaDesejada.toLowerCase())){
                             salaSelecionada = salas.get(i);
@@ -55,7 +54,29 @@ public class Main {
                         }
                     }
                 }
-            }catch (Exception _){}
+                }catch (Exception _){
+
+            }
+            System.out.println("Deseja adicionar alunos? ");
+            String resposta = scanner.nextLine();
+            if (Arrays.asList(new String[]{"sim", "yes"}).contains(resposta.toLowerCase())){
+                while (true){
+                    System.out.println("Digite o nome: ");
+                    String nome = scanner.nextLine();
+                    System.out.println("Digite a data de nascimento: ");
+                    String dataDeNascimento = scanner.nextLine();
+                    System.out.println("Digite o email: ");
+                    String email = scanner.nextLine();
+                    System.out.println("Digite o endereço: ");
+                    String endereco = scanner.nextLine();
+                    salaSelecionada.alunos.add(new Aluno(nome, dataDeNascimento, email, endereco, salaSelecionada));
+                    System.out.println("Deseja adicionar mais um aluno? ");
+                    resposta = scanner.nextLine();
+                    if (!Arrays.asList(new String[]{"sim", "yes"}).contains(resposta.toLowerCase())){
+                        break;
+                    }
+                }
+            }
         }
     }
 }

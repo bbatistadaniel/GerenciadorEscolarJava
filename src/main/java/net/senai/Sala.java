@@ -8,7 +8,7 @@ public class Sala implements GetterAndSetter{
     private String materia;
     private String periodo;
     private String professor;
-    private ArrayList<Aluno> alunos;
+    public ArrayList<Aluno> alunos;
 
     public Sala(String nome, String materia, String periodo, String professor, ArrayList<Aluno> alunos){
         this.nome = nome;
