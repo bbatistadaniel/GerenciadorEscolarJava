@@ -38,7 +38,7 @@ public class Main {
                     String periodo = scanner.nextLine();
                     System.out.printf("Digite o nome do professor: ");
                     String professor = scanner.nextLine();
-                    salas.add(new Sala(nome, materia, periodo, professor));
+                    salas.add(new Sala(nome, materia, periodo, professor, new ArrayList<>()));
                     System.out.printf("Sala %s criada\n", salas.getLast().getNome());
                 }
 

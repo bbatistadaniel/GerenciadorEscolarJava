@@ -1,22 +1,27 @@
 package net.senai;
 
+import java.util.ArrayList;
+
 public class Sala implements GetterAndSetter{
 
     private String nome;
     private String materia;
     private String periodo;
     private String professor;
+    private ArrayList<Aluno> alunos;
 
-
-    public Sala(String nome, String materia, String periodo, String professor){
+    public Sala(String nome, String materia, String periodo, String professor, ArrayList<Aluno> alunos){
         this.nome = nome;
         this.materia = materia;
         this.periodo = periodo;
         this.professor = professor;
+        this.alunos = alunos;
     }
 
     public void listarAlunos(){
-
+        for (int i = 0; i < alunos.size(); i++){
+            System.out.println(alunos.get(i).getNome());
+        }
     }
 
     @Override
