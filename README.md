@@ -1,4 +1,5 @@
-# ☕ Gerenciador Escolar em Java
+<h1 align="center">☕ Gerenciador Escolar em Java</h1>
+
 # Colaboradores:
 
 <table align="center">
@@ -31,7 +32,7 @@
 
 
 
-# 📜 Sobre o Projeto
+<h1 align="center">📜 Sobre o Projeto</h1>
 
 
 > ###  1. Porque esse tema?
@@ -48,7 +49,7 @@ de computadores disponíveis para o grupo, a falta de energia elétrica na resid
 e os desafios na criação do código Main.java, especialmente na hora de recuperar determinadas informações.
 Essas questões impactaram o progresso do projeto e exigiram soluções alternativas para garantir o avanço das atividades.
  # Linguagem utilizada:
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+<a aling="center">![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)</a>
 
 
 # Diagrama: <br> ![Diagrama](diagram.png)
