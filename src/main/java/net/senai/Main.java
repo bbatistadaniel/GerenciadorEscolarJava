@@ -42,7 +42,19 @@ public class Main {
                     System.out.printf("Sala %s criada\n", salas.getLast().getNome());
                 }
 
-
+                if (Arrays.asList(new String[]{"select", "selecionar"}).contains(lastInput.toLowerCase())){
+                    System.out.printf("Digite o nome da sala: ");
+                    String salaDesejada = scanner.nextLine();
+                    Sala salaSelecionada;
+                    for (int i = 0; i < salas.size(); i++){
+                        if (salas.get(i).getNome().toLowerCase().equals(salaDesejada.toLowerCase())){
+                            salaSelecionada = salas.get(i);
+                            System.out.printf("Sala selecionada: %s\n", salaSelecionada.getNome());
+                        }else{
+                            System.out.printf("Sala \"%s\" não encontrada\n", salaDesejada);
+                        }
+                    }
+                }
             }catch (Exception _){}
         }
     }
