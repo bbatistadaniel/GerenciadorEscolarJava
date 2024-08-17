@@ -1,4 +1,4 @@
-<h1 align="center">☕ Gerenciador Escolar em Java</h1><br><br>
+<h2 align="center">☕ Gerenciador Escolar em Java</h2><br><br>
 
 # Colaboradores:
 
@@ -32,7 +32,7 @@
 
 
 
-<h1 align="center">📜 Sobre o Projeto</h1>
+<h2 align="center">📜 Sobre o Projeto</h2>
 
 
 > ###  1. Porque esse tema?
