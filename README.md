@@ -1,4 +1,4 @@
-<b> <p aling="center" font-size="35%">☕ Gerenciador Escolar em Java</p></b>
+<b aling="center"> <p aling="center" font-size="35%">☕ Gerenciador Escolar em Java</p></b>
 
 # Colaboradores:
 
