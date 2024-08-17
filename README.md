@@ -1,4 +1,4 @@
-<h1 align="center">☕ Gerenciador Escolar em Java</h1>
+<h1 align="center">☕ Gerenciador Escolar em Java</h1><br><br>
 
 # Colaboradores:
 
