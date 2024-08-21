@@ -1,6 +1,6 @@
-<b aling="center"> <p aling="center" font-size="35%">☕ Gerenciador Escolar em Java</p></b>
+# ☕ Gerenciador Escolar em Java
 
-# Colaboradores:
+## Colaboradores:
 
 <table align="center">
   <thead>
